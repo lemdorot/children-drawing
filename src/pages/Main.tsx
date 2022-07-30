@@ -1,9 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
+import PageMain from '../components/PageMain';
 
 const Main = () => {
     return (
-        <Header />
+        <div>
+            <Header />
+            <PageMain />
+        </div>
     );
 };
 
