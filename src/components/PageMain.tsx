@@ -1,5 +1,6 @@
 import React from 'react';
 import Description from './Description';
+import Features from './Features';
 import MainBlock from './MainBlock';
 
 const PageMain = () => {
@@ -7,6 +8,7 @@ const PageMain = () => {
         <main className='page-main'>
             <MainBlock />
             <Description />
+            <Features />
         </main>
     );
 };

@@ -37,7 +37,7 @@ const MainBlock = () => {
                 </div>
             </div>
         
-            <div className="main-block__image _ibg">
+            <div className="main-block__image">
                 <img src="./img/main-block/animation_picture.svg" alt="cover"/>
             </div>
         </section>

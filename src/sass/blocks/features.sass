@@ -1,0 +1,65 @@
+.features
+    padding: 0 263px
+    padding-top: 38px
+    background-image: url('../../../public/img/features/waves.svg')
+    
+.features__list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.features__title 
+    margin-bottom: 58px
+    font-family: $titlesFont
+    font-weight: 700
+    font-size: 32px
+    line-height: calc(44 / 32 * 100%)
+    text-align: center
+    letter-spacing: 0.04em
+    color: $titlesFontColor
+
+.features__title--line
+    position: relative
+
+.features__title--line:after
+    content: ""
+
+    position: absolute
+    left: 0
+    bottom: -9px
+
+    width: 105px
+    height: 10px
+
+    background-image: url('../../../public/img/features/line.svg')
+
+    background-size: 105px 10px
+
+
+.features__item
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 20px 35px 0px
+    gap: 8px
+
+    width: 445px
+    height: 170px
+    background: $backgroundColor
+    box-shadow: 0px 5px 30px rgba(215, 211, 225, 0.5)
+    border-radius: 16px
+
+    &:first-child
+        margin-bottom: 29px
+
+.features__text 
+    line-height: 23.7px
+    letter-spacing: 0.04em
+    color: $commonFontColor
+    font-size: 20px
+
+.features__link 
+    line-height: calc(24 / 20 * 100%)
+    letter-spacing: 0.04em
+    text-decoration-line: underline
+    color: $mainAccentColor
