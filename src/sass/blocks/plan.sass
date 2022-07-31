@@ -1,0 +1,63 @@
+.plan
+    padding: 0 263px
+    padding-top: 40px
+    background-image: url('../../../img/plan/sky.png')
+    background-size: 1920px 907px
+    
+.plan__title
+    font-size: 32px
+    line-height: 44px
+    text-align: center
+    letter-spacing: 0.04em
+
+    .title--line:after
+        bottom: -5px
+        width: 84px
+        background-size: 84px 10px
+        background-image: url('../../../img/plan/line.svg')
+
+.plan__body
+    position: relative
+    padding-top: 132px
+    padding-left: 91px
+
+.plan__column
+    position: absolute
+    display: flex
+    align-items: flex-start
+
+    &:nth-child(2)
+        top: 87px
+        left: 22px
+
+    &:nth-child(3)
+        top: 290px
+        left: 489px
+
+    &:nth-child(4)
+        top: 507px
+        left: 969px
+
+.plan__column-count 
+    margin-right: 41px
+    width: 80px
+    border-radius: 50%
+    font-weight: 700
+    font-size: 40px
+    line-height: 80px
+    text-align: center
+    color: $backgroundColor
+    background: $mainAccentColor
+
+.plan__column-text 
+    font-family: $commonFont
+    font-size: 20px
+    line-height: 23.7px
+    letter-spacing: 0.04em
+    color: $commonFontColor
+
+.plan__column-link 
+    line-height: 23.7px
+    letter-spacing: 0.04em
+    text-decoration: underline
+    color: $mainColor

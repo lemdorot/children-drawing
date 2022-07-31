@@ -4,7 +4,7 @@ const Features = () => {
     return (
         <section className="page__features features">
 
-            <h2 className="features__title">Для чего <span className='features__title--line'>нужно</span> участвовать</h2>
+            <h2 className="features__title">Для чего <span className='title--line'>нужно</span> участвовать</h2>
         
             <ul className="features__list">
                 <li className="features__item">
@@ -32,10 +32,6 @@ const Features = () => {
                     <p className="features__text">Публикация работ победителей во ВКонтакте. <a href="#" className="features__link">Подписывайтесь!</a></p>
                 </li>
             </ul>
-               
-            {/* <div className="main-block__image _ibg">
-                <img src="./img/features/waves.svg" alt="cover"/>
-            </div> */}
              
             </section>
     );
