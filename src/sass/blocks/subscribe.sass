@@ -1,0 +1,93 @@
+.subscribe
+    margin: 0 120px
+    padding-top: 31px
+    padding-bottom: 67px
+    background-image: url(../../img/subscribe/bg.png)
+    background-size: 1680px 373px
+    
+.subscribe__title 
+    margin-bottom: 20px
+    font-family: $titlesFont
+    font-weight: 700
+    font-size: 32px
+    line-height: 44px
+    text-align: center
+    letter-spacing: 0.04em
+    color: $backgroundColor
+
+.subscribe__subtitle 
+    margin-bottom: 39px
+    font-weight: 400
+    font-family: $commonFont
+    font-size: 18px
+    line-height: 27px
+    text-align: center
+    letter-spacing: 0.05em
+    color: $backgroundColor
+
+.subscribe__form 
+    margin-bottom: 24px
+    display: flex
+    justify-content: center
+
+.subscribe__form-input 
+    margin-right: 31px
+    margin-left: 110px
+    padding: 17px 20px
+    width: 540px
+
+    border: 1px solid #9FA0A7
+    border-radius: 15px
+
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.04em
+
+.subscribe__form-btn 
+    padding: 17px 120px
+    background: $mainColor
+    border-radius: 15px
+
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 0.04em
+    color: $backgroundColor
+
+.subscribe__check-wrapper
+    margin-left: 430px
+    display: flex
+
+.subscribe__check-inner
+    margin-right: 14px
+    width: 19px
+    height: 19px
+
+.subscribe__check-label
+    position: relative
+
+    &::before 
+        position: absolute
+        content: ""
+        top: -2px
+        left: 0
+        width: 19px
+        height: 19px
+        background: $mainColor
+        border-radius: 5px
+
+.subscribe__check:checked+.subscribe__check-label::before 
+    background-image: url(../../img/registration/check.svg)
+    background-repeat: no-repeat
+    background-position: center center
+
+.subscribe__check-text
+    color: $backgroundColor
+    font-size: 15px
+    letter-spacing: 0.04em
+
+.subscribe__check-link
+    color: $backgroundColor
+    text-decoration: underline
+    font-weight: 700
+    line-height: 17px
+

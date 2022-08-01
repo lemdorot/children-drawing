@@ -6,6 +6,7 @@ import Interview from './Interview';
 import MainBlock from './MainBlock';
 import Plan from './Plan';
 import Registration from './Registration';
+import Subscribe from './Subscribe';
 
 const PageMain = () => {
     return (
@@ -17,6 +18,7 @@ const PageMain = () => {
             <Award />
             <Registration />
             <Interview />
+            <Subscribe />
         </main>
     );
 };
