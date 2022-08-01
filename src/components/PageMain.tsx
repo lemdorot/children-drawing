@@ -4,6 +4,7 @@ import Description from './Description';
 import Features from './Features';
 import MainBlock from './MainBlock';
 import Plan from './Plan';
+import Registration from './Registration';
 
 const PageMain = () => {
     return (
@@ -13,6 +14,7 @@ const PageMain = () => {
             <Features />
             <Plan />
             <Award />
+            <Registration />
         </main>
     );
 };
