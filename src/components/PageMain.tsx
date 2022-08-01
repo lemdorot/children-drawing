@@ -2,6 +2,7 @@ import React from 'react';
 import Award from './Award';
 import Description from './Description';
 import Features from './Features';
+import Interview from './Interview';
 import MainBlock from './MainBlock';
 import Plan from './Plan';
 import Registration from './Registration';
@@ -15,6 +16,7 @@ const PageMain = () => {
             <Plan />
             <Award />
             <Registration />
+            <Interview />
         </main>
     );
 };
