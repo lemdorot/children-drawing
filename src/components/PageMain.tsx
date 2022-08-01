@@ -1,4 +1,5 @@
 import React from 'react';
+import Award from './Award';
 import Description from './Description';
 import Features from './Features';
 import MainBlock from './MainBlock';
@@ -11,6 +12,7 @@ const PageMain = () => {
             <Description />
             <Features />
             <Plan />
+            <Award />
         </main>
     );
 };
