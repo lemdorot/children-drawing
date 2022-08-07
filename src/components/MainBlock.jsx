@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import {motion} from 'framer-motion';
 
 const MainBlock = () => {
+    const [trigger, setTrigger] = useState(false)
+    const [mode, setMode] = useState("out-in")
+
+    useEffect(() => {
+        setTrigger(true)
+      }, [])
+
     return (
         <section className="page-main__main-block main-block">
             <div className="main-block__wrapper">
@@ -18,15 +27,33 @@ const MainBlock = () => {
                             <div className="counter__value">дней</div>
                         </div>
 
-                        <div className="counter__item separater">:</div>
+                        <motion.div className="counter__item separater"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ 
+                                duration: 0.5,
+                                repeatDelay: 1,
+                                repeat: Infinity,
+                                ease: 'easeInOut'
+                            }}
+                        >:</motion.div>
 
                         <div className="counter__item">
                             <div className="counter__number">09</div>
                             <div className="counter__value">часов</div>
                             <div className="counter__city">по МСК</div>
                         </div>
-
-                        <div className="counter__item separater">:</div>
+                     
+                        <motion.div className="counter__item separater"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ 
+                                duration: 0.5,
+                                repeatDelay: 1,
+                                repeat: Infinity,
+                                ease: 'easeInOut'
+                            }}
+                        >:</motion.div>
 
                         <div className="counter__item">
                             <div className="counter__number">43</div>
