@@ -1,6 +1,7 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import Button from './UI/Button/Button';
+import AnimRegForm from './Animation/AnimRegForm';
 
 const Registration = () => {
     return (
@@ -67,50 +68,7 @@ const Registration = () => {
                         <Button onClick={(e: any) => e.preventDefault()} className="reg-form__submit-button">
                             Учавствовать
                         </Button>
-                        <div className="reg-form__anim">
-                            <motion.img src="./img/registration/plane_01.svg" className="reg-form__anim-img" alt="самолетик"
-                                initial={{ x: 0, y: 0, rotate: 0 }}
-                                animate={{ 
-                                    x: [0, 0, -40, -40, -40], 
-                                    y: [0, 0, 5, 5, 5],
-                                    rotate: [0, 0, -5, -5, -5]
-                                }}
-                                transition={{
-                                    duration: 4,
-                                    repeat: Infinity,
-                                    ease: 'easeIn',
-                                    times: [0, 0.5, 0.7, 0.9, 1]
-                                }}
-                            />
-                            <motion.img src="./img/registration/plane_02.svg" className="reg-form__anim-img" alt="самолетик"
-                                initial={{ x: 0, y: 0, rotate: 0 }}
-                                animate={{ 
-                                    x: [0, 0, -15, -15, -15], 
-                                    y: [0, 0, 0, 0, 0],
-                                    rotate: [0, 0, 5, 5, 5]
-                                }}
-                                transition={{
-                                    duration: 4,
-                                    repeat: Infinity,
-                                    ease: 'easeIn',
-                                    times: [0, 0.5, 0.7, 0.9, 1]
-                                }}
-                            />
-                            <motion.img src="./img/registration/plane_03.svg" className="reg-form__anim-img" alt="самолетик"
-                                initial={{ x: 420, y: -200, rotate: -30 }}
-                                animate={{ 
-                                    x: [420, 125, -25, -20, -20], 
-                                    y: [-200, -20, 0, 0, 0],
-                                    rotate: [-30, 10, 30, 30, 30]
-                                }}
-                                transition={{
-                                    duration: 4,
-                                    repeat: Infinity,
-                                    ease: 'easeIn',
-                                    times: [0, 0.4, 0.7, 0.9, 1]
-                                }}
-                            />
-                        </div>
+                        <AnimRegForm />
                     </div>
                 </form>
 
