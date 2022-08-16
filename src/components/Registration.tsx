@@ -1,5 +1,6 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import Button from './UI/Button/Button';
 
 const Registration = () => {
     return (
@@ -63,7 +64,9 @@ const Registration = () => {
                     </div>
 
                     <div className="reg-form__submit-wrapper">
-                        <button type="submit" className="reg-form__submit-button">Учавствовать</button>
+                        <Button onClick={(e: any) => e.preventDefault()} className="reg-form__submit-button">
+                            Учавствовать
+                        </Button>
                         <div className="reg-form__anim">
                             <motion.img src="./img/registration/plane_01.svg" className="reg-form__anim-img" alt="самолетик"
                                 initial={{ x: 0, y: 0, rotate: 0 }}
@@ -94,9 +97,9 @@ const Registration = () => {
                                 }}
                             />
                             <motion.img src="./img/registration/plane_03.svg" className="reg-form__anim-img" alt="самолетик"
-                                initial={{ x: 450, y: -200, rotate: -30 }}
+                                initial={{ x: 420, y: -200, rotate: -30 }}
                                 animate={{ 
-                                    x: [450, 125, -25, -20, -20], 
+                                    x: [420, 125, -25, -20, -20], 
                                     y: [-200, -20, 0, 0, 0],
                                     rotate: [-30, 10, 30, 30, 30]
                                 }}

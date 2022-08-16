@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import Button from './UI/Button/Button';
 
 const MainBlock = () => {
     return (
@@ -9,7 +10,10 @@ const MainBlock = () => {
                 <p className="main-block__text">Учавствуйте в конкурсе и получайте призы в различных<br/> номинациях детского рисунка для всех возрастов</p>
 
                 <div className="main-block__inner">
-                    <button type="button" className="main-block__button">Учавствовать</button>
+                    {/* <button type="button" className="main-block__button">Учавствовать</button> */}
+                    <Button onClick={(e: any) => e.preventDefault()} className="main-block__button">
+                        Учавствовать
+                    </Button>
 
                     <div className="main-block__counter counter">
                         

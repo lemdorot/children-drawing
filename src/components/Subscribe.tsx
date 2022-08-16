@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './UI/Button/Button';
 
 const Subscribe = () => {
     return (
@@ -9,7 +10,9 @@ const Subscribe = () => {
 
             <form action="#" method="post" encType="multipart/form-data" className="subscribe__form" >
                 <input type="text" name="email" placeholder="Email" className="subscribe__form-input"/>
-                <button type="submit" className="subscribe__form-btn">Отправить</button>
+                <Button onClick={(e: any) => e.preventDefault()} className="subscribe__form-btn">
+                    Отправить
+                </Button>
             </form>
 
             <div className="subscribe__check-wrapper">
