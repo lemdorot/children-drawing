@@ -2,8 +2,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PageMain from '../components/PageMain';
 
-import '../sass/styles.sass';
-
 const Main = () => {
     return (
         <div>

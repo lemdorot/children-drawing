@@ -35,3 +35,9 @@
     font-size: 20px
     line-height: 24px
     letter-spacing: 0.04em
+
+    &:hover
+        background: darken($inputBgColor, 10%) !important
+
+    &:active, &:focus
+        background: lighten($inputBgColor, 10%) !important

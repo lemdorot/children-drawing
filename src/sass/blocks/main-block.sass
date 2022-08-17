@@ -36,6 +36,12 @@
 
     color: $btnTextColor
 
+    &:hover
+        background: darken($btnBgColor, 10%)
+
+    &:active, &:focus
+        background: lighten($btnBgColor, 10%)
+
 .main-block__inner
     display: flex
     justify-content: space-between

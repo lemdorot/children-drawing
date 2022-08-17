@@ -33,3 +33,9 @@
     height: 48px
     border-radius: 50%
     background: $btnBgAccentColor
+
+    &:hover
+        background: darken($btnBgAccentColor, 10%)
+
+    &:active, &:focus
+        background: lighten($btnBgAccentColor, 10%)

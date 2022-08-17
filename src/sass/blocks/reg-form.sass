@@ -67,6 +67,12 @@
     letter-spacing: 0.04em
     color: $btnTextColor
 
+    &:hover
+        background: darken($btnBgAdditionalColor, 10%)
+
+    &:active, &:focus
+        background: lighten($btnBgAdditionalColor, 10%)
+
 .reg-form__anim
     position: relative
     width: 300px

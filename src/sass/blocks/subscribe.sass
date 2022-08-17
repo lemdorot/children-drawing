@@ -53,6 +53,12 @@
     letter-spacing: 0.04em
     color: $btnTextColor
 
+    &:hover
+        background: darken($btnBgColor, 10%)
+
+    &:active, &:focus
+        background: lighten($btnBgColor, 10%)
+
 .subscribe__check-wrapper
     margin-left: 430px
     display: flex
